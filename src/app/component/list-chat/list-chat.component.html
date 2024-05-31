@@ -1,0 +1,19 @@
+<div class="card mb-sm-3 mb-md-0 contacts_card" style="height: 50rem">
+
+  <div class="card-header">
+    <div class="input-group">
+      <input type="text" placeholder="Search..." name="" class="form-control search">
+      <div class="input-group-prepend">
+        <span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body contacts_body">
+    <div class="contacts">
+      @for (user of listUsers; track user.id ){
+      <app-chat-item [user]="user"></app-chat-item>
+      }
+    </div>
+  </div>
+  <div class="card-footer"></div>
+</div>

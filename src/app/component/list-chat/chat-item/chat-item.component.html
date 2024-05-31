@@ -1,0 +1,11 @@
+<li [ngClass]="{'active':user.id==1}">
+  <div class="d-flex bd-highlight">
+    <div class="img_cont">
+      <img [ngSrc]="user.image ? user.image: ''" class="rounded-circle user_img" fill>
+      <span class="online_icon {{user.online?'':'offline'}}"></span>
+    </div>
+    <div class="user_info">
+      <span>{{ user.name}}</span>
+    </div>
+  </div>
+</li>
